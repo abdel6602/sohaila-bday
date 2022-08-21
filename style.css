@@ -7,7 +7,13 @@ body{
     max-height: 100vh;
 }
 
+.screen{
+    opacity: 1;
+}
 
+.phone{
+    opacity: 0;
+}
 img{
     width: 100vw;
     height: 100vh;
@@ -18,14 +24,15 @@ img{
 .container{
     position: absolute;
     top: 30%;
-    left: 47%;
+    left: 42%;
+    width: 50%;
     grid-column: 1;
     grid-row: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    height: 10em;
     font-family: roboto;
     color: rgb(83, 19, 201);
 }
@@ -35,7 +42,7 @@ img{
     flex-direction: row;
     width: 100vw;
     justify-content: space-around;
-    width: 35rem;
+    width: 100%;
 }
 
 .wholeContainer{
@@ -53,9 +60,33 @@ img{
 }
 
 h3{
-    font-size: 24pt;
+    font-size: 150%;
 }
 
 h5{
-    font-size: 16pt;
+    font-size: 100%;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    
+    .screen{
+        opacity: 0;
+    }
+    .phone{
+        opacity: 1;
+    }
+    .container{
+        top: 35%;
+        left: 25%;
+        width: 75%;
+        height: 7rem;
+        color: black;
+        border: thin solid black;
+        box-shadow:-1px 2px 8px 0px rgb(80, 79, 79);
+    }
+
 }
