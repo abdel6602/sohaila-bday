@@ -5,6 +5,7 @@
 
 body{
     max-height: 100vh;
+    max-width: 100%;
 }
 
 .screen{
@@ -46,7 +47,6 @@ img{
 }
 
 .wholeContainer{
-
     display: grid;
     align-items: center;
     justify-items: center;
@@ -67,6 +67,14 @@ h5{
     font-size: 100%;
 }
 
+.clickMe{
+    position: relative;
+    top: 130%;
+    color: rebeccapurple;
+    opacity: 0;
+    pointer-events:none;
+}
+
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
@@ -84,10 +92,17 @@ h5{
     .container{
         top: 55%;
         left: 5%;
-        width: 85%;
+        width: 80%;
         height: 7rem;
         color: white;  
         font-weight: 300; 
+    }
+    
+    .clickMe{
+        position: relative;
+        top: 2rem;
+        opacity: 0;
+        pointer-events: none;
     }
 
 }
