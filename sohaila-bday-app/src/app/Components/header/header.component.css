@@ -1,0 +1,24 @@
+.headerContainer{
+  background-color: rgb(61, 120, 61);
+  padding: 2%;
+  display: flex;
+}
+
+.mainMenu{
+  width: 80%;
+  height: 100%;
+  /* border: thin solid black; */
+}
+
+.mainMenu ul{
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  list-style: none;
+  text-decoration: none;
+}
+
+.mainMenu ul li:hover{
+  text-decoration: underline;
+  cursor:pointer
+}

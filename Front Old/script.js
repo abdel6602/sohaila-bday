@@ -40,4 +40,3 @@ function countdown(){
     secondsElem.innerText = seconds
 } 
 
-
