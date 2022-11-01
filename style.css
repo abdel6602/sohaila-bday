@@ -11,7 +11,7 @@ body{
 
 .font{
     font-family: roboto;
-    color: white;
+    color: black;
 }
 
 .click{
@@ -88,13 +88,12 @@ h5{
 }
 
 
-/* canvas {
-    width: 100vw;
-    height: 40vh;
+canvas {
+    height: 85vh;
     background:none;
 	cursor: crosshair;
     display: block;
-} */
+}
 
 @media only screen 
   and (min-device-width: 320px) 

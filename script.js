@@ -1,4 +1,5 @@
 // grabbing elements from dom
+const body = document.getElementById('WholeContainer');
 const monthsElem = document.getElementById('months')
 const daysElem = document.getElementById('days')
 const hoursElem = document.getElementById('hours')
@@ -15,8 +16,10 @@ var currentDate = new Date();
 //calling the countdown function each second
 let interval = setInterval(countdown, 1000);
 
+console.log(body);
 //end Algroithm
 if((birthdayDate - currentDate) < 0){
+    body.innerHTML = '<h1 class="font">HAPPY BIRTHDAYYY!</h1><br><h5 class="font">click anywhere for fireworks!❤️❤️</h3><canvas id="canvas"></canvas>'
     clickMe.setAttribute('style', "opacity: 1; pointer-events: all");
     clearInterval(interval)
 }
