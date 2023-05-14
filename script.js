@@ -7,7 +7,7 @@ const minutesElem = document.getElementById('minutes')
 const secondsElem = document.getElementById('seconds')
 const clickMe = document.getElementById('clickMe')
 //declaring string variable to use for date object creation
-const birthday = '2 Nov 2022';
+const birthday = '2 Nov 2023';
 // declaring end date object
 const birthdayDate = new Date(birthday);
 //declaring currentDate once to check on reload
@@ -16,7 +16,6 @@ var currentDate = new Date();
 //calling the countdown function each second
 let interval = setInterval(countdown, 1000);
 
-console.log(body);
 //end Algroithm
 if((birthdayDate - currentDate) < 0){
     body.innerHTML = '<h1 class="font">HAPPY BIRTHDAYYY!</h1><br><h5 class="font">click anywhere for fireworks!❤️❤️</h3><canvas id="canvas"></canvas>'
